@@ -19,33 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('C:\\Users\\User\\Downloads\\app-release (9).apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Login/splash screen'), 0)
+Mobile.tap(findTestObject('Object Repository/Sign UP/android.widget.ImageView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login/email'), 0)
+Mobile.tap(findTestObject('Object Repository/Sign UP/invalid email'), 0)
 
-Mobile.setText(findTestObject('Login/email'), email, 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/Login/password'), 0)
-
-Mobile.setText(findTestObject('Login/password'), password, 0)
-
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/Login/sign in button'), 0)
-
-if (email == '') {
-    Mobile.verifyElementVisible(findTestObject('Login/error email empty'), 0)
-} else if (password == '') {
-    Mobile.verifyElementVisible(findTestObject('Login/error password empty'), 0)
-} else if (email.contains('.com') == false) {
-    Mobile.verifyElementVisible(findTestObject('Object Repository/invalid email error'), 0)
-} else if (password.length() < 8) {
-    Mobile.verifyElementVisible(findTestObject('Object Repository/Login/error length password'), 0)
-} else {
-    Mobile.verifyElementVisible(findTestObject('Login/home'), 0)
-}
+Mobile.tap(findTestObject('Object Repository/Sign UP/android.widget.EditText - (2)'), 0)
 
 Mobile.closeApplication()
 

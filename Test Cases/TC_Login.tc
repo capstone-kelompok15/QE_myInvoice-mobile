@@ -18,14 +18,14 @@
       <variableId>456ec749-3b7b-42a5-b3d3-b2e5013cda17</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'customer@yopmail.com'</defaultValue>
       <description></description>
       <id>76b26aff-e740-4413-8389-57edc8006420</id>
       <masked>false</masked>
       <name>email</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'password'</defaultValue>
       <description></description>
       <id>456ec749-3b7b-42a5-b3d3-b2e5013cda17</id>
       <masked>false</masked>
