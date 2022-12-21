@@ -17,17 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\app-release (10).apk', true)
+Mobile.startApplication('C:\\Users\\User\\Downloads\\app-release (14).apk', true)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/method'), 0)
+Mobile.tap(findTestObject('Object Repository/Login/splash screen'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BNI'), 0)
+Mobile.tap(findTestObject('Object Repository/Login/email'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BCA'), 0)
+Mobile.setText(findTestObject('Login/email'), 'customer@yopmail.com', 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/Mandiri'), 0)
+Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Login/password'), 0)
 
-Mobile.closeApplication()
+Mobile.setText(findTestObject('Login/password'), 'password', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/Login/sign in button'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Login/home'), 0)
 

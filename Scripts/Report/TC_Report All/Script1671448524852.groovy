@@ -17,17 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\app-release (10).apk', true)
+WebUI.callTestCase(findTestCase('Sign In/TC_positive Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/method'), 0)
+Mobile.verifyElementVisible(findTestObject('Login/home'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BNI'), 0)
+Mobile.tap(findTestObject('Object Repository/report/report tab'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BCA'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Payment method/Mandiri'), 0)
-
-Mobile.tap(findTestObject(''), 0)
-
-Mobile.closeApplication()
-
+Mobile.verifyElementVisible(findTestObject('Object Repository/report/text payment report'), 0)

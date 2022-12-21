@@ -17,17 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\User\\Downloads\\app-release (10).apk', true)
+WebUI.callTestCase(findTestCase('Sign In/TC_positive Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/method'), 0)
+Mobile.tap(findTestObject('Object Repository/profile/profile tab'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BNI'), 0)
+Mobile.tap(findTestObject('Object Repository/profile/personal data button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/BCA'), 0)
+Mobile.verifyElementVisible(findTestObject('profile/Personal Data verify'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Payment method/Mandiri'), 0)
+Mobile.scrollToText('Enter your address', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/profile/android.widget.EditText - Enter your address (1)'), 0)
+
+Mobile.setText(findTestObject('Object Repository/profile/android.widget.EditText - Enter your address (2)'), 'adress', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('profile/save'), 0)
 
 Mobile.closeApplication()
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_payment BNI</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9dab4856-d941-4bf2-80af-4337f76d458d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7df02370-bb93-418e-b592-44ca2309e246</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'/Screenshoots/test.jpg\r\n'</defaultValue>
+      <description></description>
+      <id>7df02370-bb93-418e-b592-44ca2309e246</id>
+      <masked>false</masked>
+      <name>file</name>
+   </variable>
+</TestCaseEntity>
