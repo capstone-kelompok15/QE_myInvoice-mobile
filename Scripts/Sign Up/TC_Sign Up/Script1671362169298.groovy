@@ -41,13 +41,15 @@ Mobile.setText(findTestObject('Sign UP/Password'), password, 2)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Sign UP/confirm 8'), 0)
+Mobile.scrollToText('********', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Sign UP/confirm 8'), confirmPassword)
+Mobile.tap(findTestObject('Sign UP/confirm lagi lagi'), 2)
+
+Mobile.setText(findTestObject('Sign UP/confirm lagi lagi'), confirmPassword, 0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Sign UP/android.widget.Button (1)'), 0)
+Mobile.tap(findTestObject('Sign UP/create account button'), 0)
 
 // Fulname kosong
 if (fullName == '') {
@@ -63,7 +65,7 @@ if (fullName == '') {
 } else if (password == '') {
     Mobile.verifyElementVisible(findTestObject('Object Repository/Sign UP/empty password'), 0)
 } else if (confirmPassword == '') {
-    Mobile.verifyElementText(findTestObject('Object Repository/Sign UP/empty confirm pasword'), '')
+    Mobile.verifyElementVisible(findTestObject('Object Repository/Sign UP/empty confirm pasword'), 0)
 } else if (email.contains('.com') == false) {
     Mobile.verifyElementVisible(findTestObject('Object Repository/Sign UP/invalid email error'), 0)
 } else if ((password.length() < 8) || (password.length() > 16)) {

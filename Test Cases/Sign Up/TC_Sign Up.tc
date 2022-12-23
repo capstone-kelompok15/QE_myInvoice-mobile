@@ -30,28 +30,28 @@
       <variableId>47c15997-2667-4bae-b910-4afd05bb8b47</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'test'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>8b531ce2-fb06-4f8a-bc0a-9b3bcbd9f05c</id>
       <masked>false</masked>
       <name>fullName</name>
    </variable>
    <variable>
-      <defaultValue>'test@gmail.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>57792a26-9e9f-4ba2-bb18-529a7f6d90d1</id>
       <masked>false</masked>
       <name>email</name>
    </variable>
    <variable>
-      <defaultValue>'password'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>46a9f531-800d-410a-86c9-9f5895ff56f8</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
    <variable>
-      <defaultValue>'password'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>47c15997-2667-4bae-b910-4afd05bb8b47</id>
       <masked>false</masked>

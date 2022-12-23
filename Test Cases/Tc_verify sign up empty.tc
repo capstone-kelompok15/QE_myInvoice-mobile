@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Tc_verify sign up empty</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e8f8c158-f7f9-4cb9-9a0b-fe8b990da9f6</testCaseGuid>
-</TestCaseEntity>
