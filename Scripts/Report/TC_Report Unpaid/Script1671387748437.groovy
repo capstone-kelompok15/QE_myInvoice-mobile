@@ -23,7 +23,7 @@ Mobile.tap(findTestObject('Object Repository/report/report tab'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/report/text payment report'), 0)
 
-Mobile.tap(findTestObject('Object Repository/report/filter'), 0)
+Mobile.tap(findTestObject('report/filter 1'), 0)
 
 Mobile.tap(findTestObject('report/type bills'), 0)
 
